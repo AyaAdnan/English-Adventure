@@ -35,26 +35,24 @@ class _First extends State<First>{
   Widget build(BuildContext context) {
 
     return Container(
-
+         //Background Color
         decoration: BoxDecoration(
           gradient: LinearGradient(
               colors:[
-                Colors.deepPurpleAccent,
-                Colors.deepPurple,
-
-
+                Color(0xff463DB1),
+                Color(0xffA44BC4),
               ]
           ),
         ),
 
+
       child: Column(
-        
-        
+        //add space between the element
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        // the elemant of page
+        // the element of page
+
+
         children: <Widget>[
-
-
 
           // top Image
           Container(
@@ -68,9 +66,32 @@ class _First extends State<First>{
 
           //Middle Text
           Container(
-            child: Center(
-              child: Text("Middle Text"),
+            child: Column(
+              children: <Widget>[
+                Container(
+                 // margin: const EdgeInsets.only(
+                    //top: 10,
+                 // ),
+                  child: Text('English Adventure',
+
+                    style: TextStyle(
+                        color: Colors.white,
+                         fontSize:20,
+                    ),
+                    ),
+
+                ),
+                Text('اهلا و سهلا بك معنا في رحلة فضائية ايها البطل , كن مستعدا لخوض هذه المغامرة للتعرف على مادة اللغة الانجليزية للصف السادس الابتدائي ',
+                       style: TextStyle(
+                       color: Colors.white,
+                       fontSize:20,
+                       ),
+
+                ),
+              ],
+
             ),
+
           ),
 
 
