@@ -5,6 +5,9 @@ class Intro extends StatelessWidget{
   Widget build(BuildContext context) {
   
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: "Poppins",
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body:Container(
@@ -39,8 +42,8 @@ class _First extends State<First>{
         decoration: BoxDecoration(
           gradient: LinearGradient(
               colors:[
-                Color(0xff463DB1),
-                Color(0xffA44BC4),
+                Color(0xFF4840B1),
+                Color(0xFFb44BC4),
               ]
           ),
         ),
@@ -48,7 +51,7 @@ class _First extends State<First>{
 
       child: Column(
         //add space between the element
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         // the element of page
 
 
@@ -58,7 +61,7 @@ class _First extends State<First>{
           Container(
             child: Center(
               child: Center(
-                child: Image.asset('lib/assets/intro.jpg'),
+                child: Image.asset('lib/assets/intro.png'),
               ),
             ),
           ),
@@ -69,9 +72,10 @@ class _First extends State<First>{
             child: Column(
               children: <Widget>[
                 Container(
-                 // margin: const EdgeInsets.only(
-                    //top: 10,
-                 // ),
+                  margin: const EdgeInsets.only(
+                   top: 0,
+                  ),
+                  padding: EdgeInsets.only(bottom: 60),
                   child: Text('English Adventure',
 
                     style: TextStyle(
@@ -81,12 +85,18 @@ class _First extends State<First>{
                     ),
 
                 ),
-                Text('اهلا و سهلا بك معنا في رحلة فضائية ايها البطل , كن مستعدا لخوض هذه المغامرة للتعرف على مادة اللغة الانجليزية للصف السادس الابتدائي ',
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 10,
+                    right: 10,
+                  ),
+                child :Text('اهلا و سهلا بك معنا في رحلة فضائية ايها البطل , كن مستعدا لخوض هذه المغامرة للتعرف على مادة اللغة الانجليزية للصف السادس الابتدائي ',
+                       textAlign: TextAlign.center,
                        style: TextStyle(
                        color: Colors.white,
-                       fontSize:20,
+                       fontSize:16,
                        ),
-
+                ),
                 ),
               ],
 
@@ -98,11 +108,28 @@ class _First extends State<First>{
 
           //Botton 
           Container(
+             padding:EdgeInsets.only(top: 59) ,
+            child:Container(
+
+              margin: EdgeInsets.all(35),
+            padding: EdgeInsets.all(20),
+            width: double.infinity,
+
+            decoration: BoxDecoration(
+              color: Color(0xFFF99E2B),
+              borderRadius: BorderRadius.circular(40)
+            ),
             child: Center(
-              child: Text("Botton"),
+              heightFactor:0.4 ,
+              child: Text("هيا نبدأ",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize:19,
+              ),
+              ),
             ),
           ),
-
+          ),
 
 
 
