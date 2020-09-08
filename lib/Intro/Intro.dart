@@ -59,74 +59,80 @@ class _First extends State<First>{
 
           // top Image
           Container(
-            child: Center(
+
               child: Center(
                 child: Image.asset('lib/assets/intro.png'),
               ),
-            ),
+
           ),
 
 
           //Middle Text
-          Container(
-            child: Column(
-              children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.only(
-                   top: 0,
-                  ),
-                  padding: EdgeInsets.only(bottom: 60),
-                  child: Text('English Adventure',
+
+                 // padding: EdgeInsets.only(bottom: 60),
+                 Center(
+                 //  heightFactor: 37,
+                     child :Text('English Adventure',
 
                     style: TextStyle(
+
                         color: Colors.white,
                          fontSize:20,
-                    ),
-                    ),
-
-                ),
+                         ),)
+                 ),
+                SizedBox(height: 18,),
                 Container(
+                  padding: EdgeInsets.only(
+                    top: 25
+                  ),
+                  height: 150,
+
+                  decoration: BoxDecoration(
+                      color: Colors.white70,
+                      borderRadius: BorderRadius.circular(40)
+                  ),
                   margin: EdgeInsets.only(
-                    left: 10,
-                    right: 10,
+                    left: 44,
+                    right: 44,
+
                   ),
                 child :Text('اهلا و سهلا بك معنا في رحلة فضائية ايها البطل , كن مستعدا لخوض هذه المغامرة للتعرف على مادة اللغة الانجليزية للصف السادس الابتدائي ',
                        textAlign: TextAlign.center,
                        style: TextStyle(
-                       color: Colors.white,
-                       fontSize:16,
+                       color: Colors.black54,
+                       fontSize:18,
                        ),
                 ),
                 ),
-              ],
 
-            ),
 
-          ),
+
+
 
 
 
           //Botton 
-          Container(
-             padding:EdgeInsets.only(top: 59) ,
-            child:Container(
+         Container(
+           padding:EdgeInsets.only(top:41) ,
+           child:Container(
 
               margin: EdgeInsets.all(35),
             padding: EdgeInsets.all(20),
             width: double.infinity,
+            height: 60,
 
             decoration: BoxDecoration(
               color: Color(0xFFF99E2B),
-              borderRadius: BorderRadius.circular(40)
+            borderRadius: BorderRadius.circular(50)
             ),
-            child: Center(
-              heightFactor:0.4 ,
+           child: Center(
+            //heightFactor:0.4 ,
               child: Text("هيا نبدأ",
-              style: TextStyle(
+             style: TextStyle(
                 color: Colors.white,
                 fontSize:19,
               ),
-              ),
+             ),
             ),
           ),
           ),
