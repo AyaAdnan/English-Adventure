@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:english_adventure/cc/Load.dart';
 
 class Intro extends StatelessWidget{
   @override
@@ -16,13 +17,18 @@ class Intro extends StatelessWidget{
           
         ),
       ),
-    );
+      routes: {
+        'Load': (context){
+          return Load();
+        }
+        ,
+      }
+    )
+
+    ;
   }
   
 }
-
-
-
 
 
 
@@ -111,8 +117,9 @@ class _First extends State<First>{
 
 
 
-          //Botton 
-         Container(
+          //Botton
+         InkWell(
+        child: Container(
            padding:EdgeInsets.only(top:41) ,
            child:Container(
 
@@ -135,8 +142,13 @@ class _First extends State<First>{
              ),
             ),
           ),
-          ),
 
+          ),
+           onTap: (){
+          Navigator.of(context).pushNamed('Load');
+
+           },
+         ),
 
 
 
