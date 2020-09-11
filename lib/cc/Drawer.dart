@@ -38,7 +38,7 @@ class _MyDrawerState extends State<MyDrawer> {
                     alignment: Alignment(-0.7,0.6),
                     child: CircleAvatar(
                       //child: Image.asset('lib/assets/boy.jpg',),
-                     backgroundColor: Colors.white,
+                     backgroundColor: Colors.white70,
                       radius:52,
                     ),
 
@@ -76,14 +76,14 @@ class _MyDrawerState extends State<MyDrawer> {
               
             ),
 
-            ListTile(
+           // ListTile(
               //title: Text('الصفحة الرئيسية'),
-             title: Text('الصفحة الرئيسية',textAlign: TextAlign.right,),
-              leading:Align(
-                alignment: Alignment(1, 2),
-                child :Icon(Icons.home,),),
+             //title: Text('الصفحة الرئيسية',textAlign: TextAlign.right,),
+              //leading:Align(
+              //  alignment: Alignment(1, 2),
+               // child :Icon(Icons.home,),),
                  
-            )
+            //)
           ],
           
         ),
