@@ -38,7 +38,7 @@ class _MyDrawerState extends State<MyDrawer> {
                     alignment: Alignment(-0.7,0.6),
                     child: CircleAvatar(
                       //child: Image.asset('lib/assets/boy.jpg',),
-                     backgroundColor: Colors.white70,
+                     backgroundColor: Colors.white,
                       radius:52,
                     ),
 
