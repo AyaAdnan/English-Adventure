@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -35,7 +36,7 @@ class _MyDrawerState extends State<MyDrawer> {
                 children: <Widget>[
 
                   Align(
-                    alignment: Alignment(-0.7,0.6),
+                    alignment: Alignment(0.7,0.6),
                     child: CircleAvatar(
                       //child: Image.asset('lib/assets/boy.jpg',),
                      backgroundColor: Colors.white70,
@@ -75,15 +76,111 @@ class _MyDrawerState extends State<MyDrawer> {
 
               
             ),
+         Column(
+           crossAxisAlignment: CrossAxisAlignment.end,
+    children: [
+         /*  ListTile(
 
-           // ListTile(
-              //title: Text('الصفحة الرئيسية'),
-             //title: Text('الصفحة الرئيسية',textAlign: TextAlign.right,),
-              //leading:Align(
-              //  alignment: Alignment(1, 2),
-               // child :Icon(Icons.home,),),
-                 
-            //)
+             title: Text('الصفحة الرئيسية',textAlign: TextAlign.right,),
+              leading:Align(
+               alignment: Alignment(1, 2),
+                child :Icon(Icons.home,),),
+
+            ), */
+
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children:[
+            IconButton(
+              icon: Icon(Icons.home),
+              onPressed: (){},
+            ),
+             Text('Home',),
+
+
+    ]
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+              IconButton(
+                icon: Icon(Icons.bookmark),
+                onPressed: (){},
+              ),
+              Text('My Degree',),
+
+
+            ]
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+              IconButton(
+                icon: Icon(Icons.note_add),
+                onPressed: (){},
+              ),
+              Text('My Note',),
+
+
+            ]
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+              IconButton(
+                icon: Icon(Icons.settings),
+                onPressed: (){},
+              ),
+              Text('Settings',),
+
+
+            ]
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+              IconButton(
+                icon: Icon(Icons.star_half),
+                onPressed: (){},
+              ),
+              Text('Rate Us',),
+
+
+            ]
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+              IconButton(
+                icon: Icon(Icons.phone),
+                onPressed: (){},
+              ),
+              Text('Contact Us',),
+
+
+            ]
+        ),
+      ),
+    ]
+         )
+
           ],
           
         ),
