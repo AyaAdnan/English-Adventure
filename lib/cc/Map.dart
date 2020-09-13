@@ -38,6 +38,7 @@ class _MapState extends State<Map> {
               color: Color(0xFFF99E2B),
               size:35,
             ),
+             onPressed: (){},
             ),),
             Align(
               alignment: Alignment(-0.5, 0.5),
