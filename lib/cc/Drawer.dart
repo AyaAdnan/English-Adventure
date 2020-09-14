@@ -36,7 +36,7 @@ class _MyDrawerState extends State<MyDrawer> {
                 children: <Widget>[
 
                   Align(
-                    alignment: Alignment(0.7,0.6),
+                    alignment: Alignment(-0.7,0.6),
                     child: CircleAvatar(
                       //child: Image.asset('lib/assets/boy.jpg',),
                      backgroundColor: Colors.white70,
@@ -93,11 +93,11 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children:[
-            IconButton(
-              icon: Icon(Icons.home),
+            IconButton(color: Color(0xFFb44BC4),
+              icon: Icon(Icons.home,),
               onPressed: (){},
             ),
-             Text('Home',),
+             Text('Home',style: TextStyle(color: Color(0xFFb44BC4),),),
 
 
     ]
@@ -108,11 +108,11 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children:[
-              IconButton(
+              IconButton(color: Colors.black54,
                 icon: Icon(Icons.bookmark),
                 onPressed: (){},
               ),
-              Text('My Degree',),
+              Text('My Degree',style: TextStyle(color: Colors.black54)),
 
 
             ]
@@ -123,11 +123,11 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children:[
-              IconButton(
+              IconButton(color: Colors.black54,
                 icon: Icon(Icons.note_add),
                 onPressed: (){},
               ),
-              Text('My Note',),
+              Text('My Note',style: TextStyle(color: Colors.black54)),
 
 
             ]
@@ -138,11 +138,11 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children:[
-              IconButton(
+              IconButton(color: Colors.black54,
                 icon: Icon(Icons.settings),
                 onPressed: (){},
               ),
-              Text('Settings',),
+              Text('Settings',style: TextStyle(color: Colors.black54)),
 
 
             ]
@@ -153,11 +153,11 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children:[
-              IconButton(
+              IconButton(color: Colors.black54,
                 icon: Icon(Icons.star_half),
                 onPressed: (){},
               ),
-              Text('Rate Us',),
+              Text('Rate Us',style: TextStyle(color: Colors.black54)),
 
 
             ]
@@ -168,11 +168,11 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children:[
-              IconButton(
+              IconButton(color: Colors.black54,
                 icon: Icon(Icons.phone),
                 onPressed: (){},
               ),
-              Text('Contact Us',),
+              Text('Contact Us',style: TextStyle(color: Colors.black54)),
 
 
             ]

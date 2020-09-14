@@ -45,6 +45,9 @@ flutter:
    - lib/assets/intro.png
    - lib/assets/load.png
    - lib/assets/head.png
+   - lib/assets/ABC.png
+   - lib/assets/Move.png
+
 
   fonts:
    - family: Poppins
