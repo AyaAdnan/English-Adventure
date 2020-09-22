@@ -47,6 +47,7 @@ flutter:
    - lib/assets/head.png
    - lib/assets/ABC.png
    - lib/assets/Move.png
+   - lib/assets/u1.png
 
 
   fonts:

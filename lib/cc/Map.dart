@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'Drawer.dart';
+import 'Abc.dart';
 
 
 
 
 class Map extends StatefulWidget {
+
+
+
   @override
   _MapState createState() => _MapState();
 }
@@ -12,7 +16,10 @@ class Map extends StatefulWidget {
 class _MapState extends State<Map> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+
+    int flag =0;
+    return
+      Scaffold(
 
       appBar: AppBar(
         title: Text('Space Map',
@@ -43,9 +50,10 @@ class _MapState extends State<Map> {
                   
                ),),
              Align(
-               alignment: Alignment(-0.5, 0.5),
+               alignment: Alignment(-0.4, 0.5),
 
-               child: Text("0x",),
+               child: Text("0x"),
+
              ),
 
 
@@ -74,44 +82,152 @@ class _MapState extends State<Map> {
             end: FractionalOffset.bottomCenter,
           ),
         ),
-        child: Column(
+        child : ListView(
           children: <Widget>[
-            Container(
+
+
+
+
+
+
+         Container(
+
               //color: Colors.redAccent,
-              //margin: EdgeInsets.all(55),
+             //margin: EdgeInsets.all(55),
+             
              padding: EdgeInsets.only(left: 97,right: 97,bottom: 97,top: 10),
               child:Stack(
                 children: <Widget>[
 
 
-                InkWell(child: Image.asset('lib/assets/ABC.png',),),
+                InkWell(child: Image.asset('lib/assets/ABC.png',),
 
-                Container(
-                  // color:Colors.blue,
-                  margin: EdgeInsets.only(),
-                  padding: EdgeInsets.only(top:2,bottom: 50,right: 50,left: 50),
-                  child: Image.asset('lib/assets/Move.png'),
+                onTap:(){
+                 Navigator.of(context).push(
+                   MaterialPageRoute(builder: (context)=>Abc(),)
+                 ); 
+                },
                 ),
 
+//                Container(
+//                  width: 250,
+//                  // color:Colors.blue,
+//                  margin: EdgeInsets.only(),
+//                  padding: EdgeInsets.only(top:2,bottom: 50,right: 50,left: 50),
+//                  child: Image.asset('lib/assets/Move.png'),
+//               ),
 
+        Container(
 
-               Container(
                  //: Colors.deepPurpleAccent,
                    margin: EdgeInsets.only(top: 60,left: 47),
                   padding: EdgeInsets.all(10),
 
                   child:Text("ABC",style: TextStyle(fontSize: 24,color: Colors.brown),),),
-                ],
 
-              ),
 
-            ),
-          ],
+                ]
+                ), ),
+
+
+
+
+
+
+        // Container(
+         //  color: Colors.amber,
+         //  padding: EdgeInsets.all(90),
+         //  margin:EdgeInsets.only(bottom:200,top: 2),
+        //   child: Image.asset('lib/assets/u1.png'),
+       //  ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         ],
         ),
+//        Column(
+//
+//          children: <Widget>[
+//
+//            Container(
+//
+//              //color: Colors.redAccent,
+//              //margin: EdgeInsets.all(55),
+//             padding: EdgeInsets.only(left: 97,right: 97,bottom: 97,top: 10),
+//              child:Stack(
+//                children: <Widget>[
+//
+//
+//                InkWell(child: Image.asset('lib/assets/ABC.png',),),
+//
+//                Container(
+//                  width: 250,
+//                  // color:Colors.blue,
+//                  margin: EdgeInsets.only(),
+//                  padding: EdgeInsets.only(top:2,bottom: 50,right: 50,left: 50),
+//                  child: Image.asset('lib/assets/Move.png'),
+//                ),
+//
+//
+//
+//               Container(
+//
+//                 //: Colors.deepPurpleAccent,
+//                   margin: EdgeInsets.only(top: 60,left: 47),
+//                  padding: EdgeInsets.all(10),
+//
+//                  child:Text("ABC",style: TextStyle(fontSize: 24,color: Colors.brown),),),
+//                ],
+//
+//              ),
+//
+//            ),
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//          ],
+//        ),
+//      ),
+
       ),
-
-
     );
+
   }
 
 
