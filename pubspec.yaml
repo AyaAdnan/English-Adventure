@@ -45,9 +45,11 @@ flutter:
    - lib/assets/intro.png
    - lib/assets/load.png
    - lib/assets/head.png
-   - lib/assets/ABC.png
    - lib/assets/Move.png
    - lib/assets/u1.png
+   - lib/assets/lock/
+   - lib/assets/number/
+   - lib/assets/face.jpg
 
 
   fonts:

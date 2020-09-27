@@ -22,6 +22,7 @@ class Intro extends StatelessWidget{
           return Load();
         }
         ,
+
       }
     )
 

@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'Map.dart';
+
 
 
 
@@ -39,7 +41,8 @@ class _MyDrawerState extends State<MyDrawer> {
                     alignment: Alignment(-0.7,0.6),
                     child: CircleAvatar(
                       //child: Image.asset('lib/assets/boy.jpg',),
-                     backgroundColor: Colors.white70,
+                    // backgroundColor: Colors.white70,
+                      backgroundImage: AssetImage('lib/assets/face.jpg'),
                       radius:52,
                     ),
 
@@ -90,17 +93,27 @@ class _MyDrawerState extends State<MyDrawer> {
 
       Padding(
         padding: EdgeInsets.only(left: 0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children:[
-            IconButton(color: Color(0xFFb44BC4),
-              icon: Icon(Icons.home,),
-              onPressed: (){},
-            ),
-             Text('Home',style: TextStyle(color: Color(0xFFb44BC4),),),
+        child:InkWell(
+          onTap: (){
+
+            Navigator.push(context,MaterialPageRoute(builder: (context){
+            return Map();
+          }));},
+
+
+
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+              IconButton(color: Color(0xFFb44BC4),
+                icon: Icon(Icons.home,),
+                onPressed: (){},
+              ),
+               Text('Home',style: TextStyle(color: Color(0xFFb44BC4),),),
 
 
     ]
+          ),
         ),
       ),
       Padding(
