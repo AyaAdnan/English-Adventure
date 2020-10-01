@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Drawer.dart';
 import 'package:english_adventure/images/img.dart';
+import 'LetterPage.dart';
 
 
 
@@ -345,38 +346,49 @@ class ContinerMaker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(left: 35,right: 35,bottom: 20,top:10),
-      padding: EdgeInsets.all(20),
-      width: double.infinity,
-      height: 70,
+    return InkWell(
 
-      decoration: BoxDecoration(
-          color:Colors.pink[200],
-          borderRadius: BorderRadius.circular(50)
-      ),
-      child: Center(
-        child:Row(
-          //crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(name,
-              style: TextStyle(
-                fontFamily: 'Poppins' ,
-                color: Colors.purple[sh],
-                fontSize:32,
+      child: Container(
+        margin: EdgeInsets.only(left: 35,right: 35,bottom: 20,top:10),
+        padding: EdgeInsets.all(20),
+        width: double.infinity,
+        height: 70,
+
+        decoration: BoxDecoration(
+            color:Colors.pink[200],
+            borderRadius: BorderRadius.circular(50)
+        ),
+        child: Center(
+          child:Row(
+            //crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(name,
+                style: TextStyle(
+                  fontFamily: 'Poppins' ,
+                  color: Colors.purple[sh],
+                  fontSize:32,
+                ),
               ),
-            ),
-            Center(child:lockicon1==true?Iconm(): null)
+              Center(child:lockicon1==true?Iconm(): null)
 
 
 
 
 
 
-          ],
+            ],
+          ),
         ),
       ),
+    onTap:(){
+
+    Navigator.push(context,MaterialPageRoute(builder: (context)
+    {
+      return Letterpage();
+    }));
+    },
+
     );
   }}
 
