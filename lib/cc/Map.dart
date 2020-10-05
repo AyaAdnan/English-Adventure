@@ -116,7 +116,7 @@ class _MapState extends State<Map> {
                     Images(
                       name: 'two',
                       platz: -0.50,
-                      lockicon:true,
+                      lockicon:false,
                       imageSize: respansv.getDeviceType(),
                     ),
                     RedColumn(

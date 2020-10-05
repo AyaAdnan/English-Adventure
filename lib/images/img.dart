@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../lockIcon/lockicon.dart';
 import 'package:english_adventure/cc/Abc.dart';
+import 'package:english_adventure/cc/units.dart';
 
 
 
@@ -31,14 +32,15 @@ class Images extends StatelessWidget {
         children: <Widget>[
           InkWell(
             borderRadius: BorderRadius.circular(20),
-            onTap: (){
-           if(this.name=='one'){
-             Navigator.push(context,MaterialPageRoute(builder: (context){
-               return Abc();
-             }));
-           }
-           else{}
+            onTap: () {
+              if (this.name == 'one') {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Units();
+                }));
+              }
+
             },
+
             child: Container(
               width: imageSize,
               height: imageSize,
