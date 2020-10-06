@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Map.dart';
+import 'package:english_adventure/Drawerpage/MyDegree.dart';
 
 
 
@@ -123,7 +124,13 @@ class _MyDrawerState extends State<MyDrawer> {
             children:[
               IconButton(color: Colors.black54,
                 icon: Icon(Icons.bookmark),
-                onPressed: (){},
+                onPressed: (){
+
+                  Navigator.push(context,MaterialPageRoute(builder: (context){
+                    return Mydegree();
+                  }));
+
+                },
               ),
               Text('My Degree',style: TextStyle(color: Colors.black54)),
 
@@ -138,7 +145,12 @@ class _MyDrawerState extends State<MyDrawer> {
             children:[
               IconButton(color: Colors.black54,
                 icon: Icon(Icons.note_add),
-                onPressed: (){},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Mydegree();
+                  }));
+                }
+
               ),
               Text('My Note',style: TextStyle(color: Colors.black54)),
 
