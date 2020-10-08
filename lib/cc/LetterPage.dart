@@ -188,8 +188,17 @@ class _LetterpageState extends State<Letterpage>  {
                 height: 60,
 
                 decoration: BoxDecoration(
-                    color: Color(0xFFF99E2B),
-                    borderRadius: BorderRadius.circular(50)
+                    color: Colors.pink[100],
+                    borderRadius: BorderRadius.circular(50),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black38,
+                      blurRadius: 1.0,
+                      offset: Offset(5, 5),
+                      spreadRadius: 1.0,
+                    )
+                  ],
+
                 ),
                 child: Center(
                   //heightFactor:0.4 ,
@@ -214,8 +223,17 @@ class _LetterpageState extends State<Letterpage>  {
                 height: 60,
 
                 decoration: BoxDecoration(
-                    color: Color(0xFFF99E2B),
-                    borderRadius: BorderRadius.circular(50)
+                    color: Colors.pink[100],
+                    borderRadius: BorderRadius.circular(50),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black38,
+                      blurRadius: 1.0,
+                      offset: Offset(5, 5),
+                      spreadRadius: 1.0,
+                    )
+                  ],
+
                 ),
                 child: Center(
                   //heightFactor:0.4 ,
@@ -250,8 +268,18 @@ class _LetterpageState extends State<Letterpage>  {
               height: 60,
 
               decoration: BoxDecoration(
-                  color: Color(0xFFF99E2B),
-                  borderRadius: BorderRadius.circular(50)
+                  color: Colors.pink[100],
+                  borderRadius: BorderRadius.circular(50),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black38,
+                    blurRadius: 1.0,
+                    offset: Offset(5, 5),
+                    spreadRadius: 1.0,
+                  )
+                ],
+
+
               ),
               child: Center(
                 //heightFactor:0.4 ,

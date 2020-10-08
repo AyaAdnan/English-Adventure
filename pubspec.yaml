@@ -50,6 +50,7 @@ flutter:
    - lib/assets/lock/
    - lib/assets/number/
    - lib/assets/face.jpg
+   - lib/assets/un1/
 
 
   fonts:
