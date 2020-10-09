@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:english_adventure/cc/Load.dart';
+import 'package:english_adventure/cc/Splash.dart';
 
 class Intro extends StatelessWidget{
   @override

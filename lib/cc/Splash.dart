@@ -16,7 +16,8 @@ class _LoadState extends State<Load> {
   void initState(){
     super.initState();
     Future.delayed(Duration(seconds: 2),(){
-      Navigator.push(context,MaterialPageRoute(builder: (context)=>Map(),));
+      Navigator.of(context).pushReplacement(
+          new MaterialPageRoute(builder: (BuildContext context) => Map()));
     });
   }
 
