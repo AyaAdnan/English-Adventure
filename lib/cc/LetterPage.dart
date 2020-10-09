@@ -172,8 +172,7 @@ class _LetterpageState extends State<Letterpage>  {
 
           Center(
             child: Icon(Icons.headset,
-
-            color: Colors.blueAccent,
+            color: Colors.blue[200],
               size: 150,
             ),
           ),
@@ -205,8 +204,9 @@ class _LetterpageState extends State<Letterpage>  {
                   child: Text("Car",
                     style: TextStyle(
                       letterSpacing: 3,
-                      color: Colors.white,
+                      color: Colors.black54,
                       fontSize:20,
+                        fontWeight: FontWeight.bold
                     ),
                   ),
                 ),
@@ -240,8 +240,9 @@ class _LetterpageState extends State<Letterpage>  {
                   child: Text("Ball",
                     style: TextStyle(
                       letterSpacing: 3,
-                      color: Colors.white,
+                      color: Colors.black54,
                       fontSize:20,
+                        fontWeight: FontWeight.bold
                     ),
                   ),
                 ),
@@ -286,8 +287,9 @@ class _LetterpageState extends State<Letterpage>  {
                 child: Text("Car",
                   style: TextStyle(
                     letterSpacing: 3,
-                    color: Colors.white,
+                    color: Colors.black54,
                     fontSize:20,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ),
