@@ -74,7 +74,7 @@ class _AbcState extends State<Abc> {
         //Background Color
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors:[
+              color:[
                 Color(0xFF4840B1),
                 Color(0xFFb44BC4),
               ],
